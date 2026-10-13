@@ -1,0 +1,5276 @@
+{
+  "scannedAt": "2026-10-13T16:36:51.9161991-05:00",
+  "steamPath": "c:/program files (x86)/steam",
+  "account": {
+    "accountName": "thewackermack1233",
+    "personaName": "Rooty",
+    "steamId64": "76561198089899772",
+    "steamId32": 129634044
+  },
+  "packageCount": 1053,
+  "gameCount": 877,
+  "games": [
+    {
+      "appid": 508290,
+      "name": "$1 Ride",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1364510,
+      "name": "\u0027Member the Alamo?",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 282800,
+      "name": "100% Orange Juice",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 735580,
+      "name": "11-11 Memories Retold",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 410110,
+      "name": "12 is Better Than 6",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 335190,
+      "name": "200% Mixed Juice!",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 883100,
+      "name": "360 No Scope Arena",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 251570,
+      "name": "7 Days to Die",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 839920,
+      "name": "9 Balls",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3244220,
+      "name": "A Game About Digging A Hole\u2122",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 449220,
+      "name": "A grande bagun\u00E7a espacial - The big space mess",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 278360,
+      "name": "A Story About My Uncle",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 478010,
+      "name": "ABC Coloring Town",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 385200,
+      "name": "Absconding Zatwor",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 555700,
+      "name": "Absoloot",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 390710,
+      "name": "Acceleration of SUGURI 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 949580,
+      "name": "Accurate Segmentation 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2288340,
+      "name": "ACE COMBAT 8: WINGS OF THEVE",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 502500,
+      "name": "ACE COMBAT\u21227: SKIES UNKNOWN",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1954750,
+      "name": "Acquitted",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 346900,
+      "name": "AdVenture Capitalist",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 788510,
+      "name": "Aeve:Zero Gravity",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 933110,
+      "name": "Age of Empires III: Definitive Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 226840,
+      "name": "Age of Wonders III",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 438020,
+      "name": "AI: Rampage",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 355860,
+      "name": "Albino Lullaby: Episode 1",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 485410,
+      "name": "Alien Run",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 214490,
+      "name": "Alien: Isolation",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 203290,
+      "name": "America\u0027s Army: Proving Grounds",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 302190,
+      "name": "Amerzone: The Explorer\u2019s Legacy (1999)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 239200,
+      "name": "Amnesia: A Machine for Pigs",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 57300,
+      "name": "Amnesia: The Dark Descent",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 945360,
+      "name": "Among Us",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 410210,
+      "name": "Ampersand",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 289090,
+      "name": "Ampu-Tea",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 91200,
+      "name": "Anomaly Warzone Earth",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 338050,
+      "name": "Anoxemia",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 219890,
+      "name": "Antichamber",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 513530,
+      "name": "Anykey Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2306590,
+      "name": "Apewar",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4103250,
+      "name": "Arcturus Vision Camera",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 346110,
+      "name": "ARK: Survival Evolved",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 407530,
+      "name": "ARK: Survival Of The Fittest",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2274200,
+      "name": "Arken Age",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1874880,
+      "name": "Arma Reforger",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1890860,
+      "name": "Arma Reforger Experimental",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 65790,
+      "name": "Arma: Cold War Assault Remastered",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 694500,
+      "name": "Army Men RTS",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 443420,
+      "name": "Artificial Defense",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 507490,
+      "name": "Ashes of the Singularity: Escalation",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 444220,
+      "name": "Asteroid Bounty Hunter",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 668580,
+      "name": "Atomic Heart",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 533820,
+      "name": "Atonement 2: Ruptured by Despair",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 385070,
+      "name": "Atonement: Scourge of Time",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 46410,
+      "name": "Avencast",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 204300,
+      "name": "Awesomenauts",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1385510,
+      "name": "Back 4 Blood Beta",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 34900,
+      "name": "Bad Rats",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 393200,
+      "name": "Bad Rats Show",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 542740,
+      "name": "Balloon Blowout",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 498030,
+      "name": "Barnyard Mahjong 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 618140,
+      "name": "Barro",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 35140,
+      "name": "Batman: Arkham Asylum GOTY Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 200260,
+      "name": "Batman: Arkham City GOTY",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 208650,
+      "name": "Batman\u2122: Arkham Knight",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 671860,
+      "name": "BattleBit Remastered",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1238820,
+      "name": "Battlefield 3\u2122 ",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1238860,
+      "name": "Battlefield 4\u2122 ",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1517290,
+      "name": "Battlefield\u2122 2042",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2807960,
+      "name": "Battlefield\u2122 6",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 1238880,
+      "name": "Battlefield\u2122 Hardline",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1238810,
+      "name": "Battlefield\u2122 V",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 489900,
+      "name": "Bayla Bunny",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 769440,
+      "name": "Beach Restaurant",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 765410,
+      "name": "Bean Battles",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 620980,
+      "name": "Beat Saber",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 475550,
+      "name": "Beholder",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 37420,
+      "name": "Ben There, Dan That!",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 346010,
+      "name": "Besiege",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 8850,
+      "name": "BioShock 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 409720,
+      "name": "BioShock 2 Remastered",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 8870,
+      "name": "BioShock Infinite",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 362890,
+      "name": "Black Mesa",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 209870,
+      "name": "Blacklight: Retribution",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 729660,
+      "name": "Blackout Z: Slaughterhouse Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 629730,
+      "name": "Blade \u0026 Sorcery",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 542730,
+      "name": "Block Blowout",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 302830,
+      "name": "BLOCKADE 3D",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 706990,
+      "name": "BLOCKPOST LEGACY",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 263060,
+      "name": "Blockstorm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 434570,
+      "name": "Blood and Bacon",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 348020,
+      "name": "Bloodbath Kavkaz",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 545250,
+      "name": "Bloody Boobs",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 960090,
+      "name": "Bloons TD 6",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 340200,
+      "name": "Bloop",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 49520,
+      "name": "Borderlands 2",
+      "type": "game",
+      "installed": true
+    },
+    {
+      "appid": 397540,
+      "name": "Borderlands 3",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 8980,
+      "name": "Borderlands GOTY",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 729040,
+      "name": "Borderlands GOTY Enhanced",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 261640,
+      "name": "Borderlands: The Pre-Sequel",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1285190,
+      "name": "Borderlands\u00AE 4",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 307170,
+      "name": "Borealis",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 395980,
+      "name": "Break Into Zatwor",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 738520,
+      "name": "Breathedge",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 335330,
+      "name": "Brick-Force",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 368900,
+      "name": "Brilliant Bob",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 696370,
+      "name": "BROKE PROTOCOL",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 444480,
+      "name": "Broken Dreams",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 225260,
+      "name": "Br\u00FCtal Legend",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 542720,
+      "name": "Bubble Blowout",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 823180,
+      "name": "Bubble Strike",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2835570,
+      "name": "Buckshot Roulette",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 429780,
+      "name": "Bunny Hop League",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 449200,
+      "name": "Calcu-Late",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 202970,
+      "name": "Call of Duty: Black Ops II",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 202990,
+      "name": "Call of Duty: Black Ops II - Multiplayer",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 212910,
+      "name": "Call of Duty: Black Ops II - Zombies",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 311210,
+      "name": "Call of Duty: Black Ops III",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 292730,
+      "name": "Call of Duty: Infinite Warfare",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 10180,
+      "name": "Call of Duty: Modern Warfare 2 (2009)",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 10190,
+      "name": "Call of Duty: Modern Warfare 2 (2009) - Multiplayer",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 10090,
+      "name": "Call of Duty: World at War",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 476600,
+      "name": "Call of Duty: WWII",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 476620,
+      "name": "Call of Duty: WWII - Multiplayer",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1938090,
+      "name": "Call of Duty\u00AE",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4384550,
+      "name": "Call of Duty\u00AE: Black Ops 6",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 42680,
+      "name": "Call of Duty\u00AE: Modern Warfare\u00AE 3 (2011)",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 42690,
+      "name": "Call of Duty\u00AE: Modern Warfare\u00AE 3 (2011) - Multiplayer",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 2075730,
+      "name": "Call of Duty\u00AE: Modern Warfare\u00AE II - Open Beta",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 204450,
+      "name": "Call of Juarez Gunslinger",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 502940,
+      "name": "Calm Down, Stalin",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 617710,
+      "name": "Cannons-Defenders: Steam Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 275490,
+      "name": "Canyon Capers",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1515950,
+      "name": "Capcom Arcade Stadium",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1018130,
+      "name": "Castle Break",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 704040,
+      "name": "Castle Clicker",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 204360,
+      "name": "Castle Crashers",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 857050,
+      "name": "Casual Penalty",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 447890,
+      "name": "Cat on a Diet",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 451880,
+      "name": "Catch a Falling Star",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 462960,
+      "name": "Caveman World: Mountains of Unga Boonga",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 287100,
+      "name": "Chaos Domain",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 556870,
+      "name": "Charlie\u0027s Adventure",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 526880,
+      "name": "Chess Knight 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 259360,
+      "name": "Chicken Shoot 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 219640,
+      "name": "Chivalry: Medieval Warfare",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 412170,
+      "name": "City of Chains",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 416040,
+      "name": "CLASH",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 602770,
+      "name": "Clatter",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 403900,
+      "name": "Clergy Splode",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1591520,
+      "name": "Clownfield 2042",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 301690,
+      "name": "Cobi Treasure Deluxe",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 355180,
+      "name": "Codename CURE",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 905640,
+      "name": "CombatArms: Reloaded",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 254020,
+      "name": "Commander: Conquest of the Americas Gold",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 299260,
+      "name": "Commando Jack",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 231430,
+      "name": "Company of Heroes 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 238430,
+      "name": "Contagion",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2881650,
+      "name": "Content Warning",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1454400,
+      "name": "Cookie Clicker",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 209670,
+      "name": "Cortex Command",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 473560,
+      "name": "Cosmic Dust \u0026 Rust",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 10,
+      "name": "Counter-Strike",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 730,
+      "name": "Counter-Strike 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 273110,
+      "name": "Counter-Strike Nexon",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 80,
+      "name": "Counter-Strike: Condition Zero",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 100,
+      "name": "Counter-Strike: Condition Zero Deleted Scenes",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 240,
+      "name": "Counter-Strike: Source",
+      "type": "game",
+      "installed": true
+    },
+    {
+      "appid": 4465480,
+      "name": "Counter-Strike:Global Offensive",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 774801,
+      "name": "Crab Champions",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1782210,
+      "name": "Crab Game",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4614210,
+      "name": "Crack the Pack",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 11390,
+      "name": "Crash Time 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 884660,
+      "name": "CRSED: Cuisine Royale",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 344740,
+      "name": "CRYPTARK",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2096600,
+      "name": "Crysis 2 Remastered",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2096610,
+      "name": "Crysis 3 Remastered",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1715130,
+      "name": "Crysis Remastered",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 567280,
+      "name": "Cube Runner",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1128000,
+      "name": "Cube World",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 302210,
+      "name": "Curse: The Eye of Isis",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1130410,
+      "name": "Cyber Hook",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1091500,
+      "name": "Cyberpunk 2077",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 490940,
+      "name": "Darconika: The Cube of Soul",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 293720,
+      "name": "Dark Raid",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 329000,
+      "name": "Data Hacker: Corruption",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 311860,
+      "name": "Data Hacker: Initiation",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 331790,
+      "name": "Data Hacker: Reboot",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 30,
+      "name": "Day of Defeat",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 300,
+      "name": "Day of Defeat: Source",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 221100,
+      "name": "DayZ",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 303390,
+      "name": "Dead Bits",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 286040,
+      "name": "Dead Effect",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 744900,
+      "name": "Dead Frontier 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 383150,
+      "name": "Dead Island Definitive Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1693980,
+      "name": "Dead Space",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1238060,
+      "name": "Dead Space\u2122 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 438030,
+      "name": "Dead6hot",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1422450,
+      "name": "Deadlock",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 40,
+      "name": "Deathmatch Classic",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 548430,
+      "name": "Deep Rock Galactic",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 493650,
+      "name": "Deep Space Dash",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 866520,
+      "name": "Defense the Farm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 96100,
+      "name": "Defy Gravity",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 274940,
+      "name": "Depth",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 226620,
+      "name": "Desktop Dungeons",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 563120,
+      "name": "Desolate Wastes: Vendor Chronicles",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 368990,
+      "name": "Despair",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 542710,
+      "name": "Dessert Storm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1085660,
+      "name": "Destiny 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 919220,
+      "name": "Destiny or Fate",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 803330,
+      "name": "Destroy All Humans!",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1266700,
+      "name": "Destroy All Humans! 2 - Reprobed",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 6910,
+      "name": "Deus Ex: Game of the Year Edition",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 238010,
+      "name": "Deus Ex: Human Revolution - Director\u0027s Cut",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 6920,
+      "name": "Deus Ex: Invisible War",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 337000,
+      "name": "Deus Ex: Mankind Divided\u2122",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 258180,
+      "name": "Deus Ex: The Fall",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2344520,
+      "name": "Diablo\u00AE IV",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 70000,
+      "name": "Dino D-Day",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 401190,
+      "name": "Dinosaur Hunt",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 321040,
+      "name": "DiRT 3 Complete Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 310560,
+      "name": "DiRT Rally",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 333930,
+      "name": "Dirty Bomb",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 205100,
+      "name": "Dishonored",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 403640,
+      "name": "Dishonored 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 569610,
+      "name": "Distant Space",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 322330,
+      "name": "Don\u0027t Starve Together",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 379720,
+      "name": "DOOM",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 782330,
+      "name": "DOOM Eternal",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 570,
+      "name": "Dota 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 1046930,
+      "name": "Dota Underlords",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 317360,
+      "name": "Double Action: Boogaloo",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4739660,
+      "name": "Drag\u0027n Wash",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 502140,
+      "name": "Drayt Empire",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 514970,
+      "name": "Drive Megapolis",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 334840,
+      "name": "Drive to Hell",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 825310,
+      "name": "Dude Simulator 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 814770,
+      "name": "Duder",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 567580,
+      "name": "Duke of Alpha Centauri",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 463220,
+      "name": "Dungeon of Zolthan",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 65300,
+      "name": "Dustforce",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 239140,
+      "name": "Dying Light",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 534380,
+      "name": "Dying Light 2: Reloaded Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3008130,
+      "name": "Dying Light: The Beast",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 730310,
+      "name": "DYNASTY WARRIORS 9",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 17580,
+      "name": "Dystopia",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 259300,
+      "name": "Earth 2150: Lost Souls",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 259280,
+      "name": "Earth 2150: The Moon Project",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1900,
+      "name": "Earth 2160",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 410320,
+      "name": "EARTH DEFENSE FORCE 4.1  The Shadow of New Despair",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 254000,
+      "name": "East India Company Gold",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 403560,
+      "name": "Eaten Alive",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1836730,
+      "name": "Echo Point Nova",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 448640,
+      "name": "Elements II: Hearts of Light",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 340650,
+      "name": "Elements: Soul of Fire",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 443080,
+      "name": "Elite Dangerous: Arena",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 527490,
+      "name": "EM: Shader Attack",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1957230,
+      "name": "Employee of the Month",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 833390,
+      "name": "En Tactico",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 428430,
+      "name": "Endorlight",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 838980,
+      "name": "Eon Fleet",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 244590,
+      "name": "Epigenesis",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 363490,
+      "name": "Escape Machines",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 227300,
+      "name": "Euro Truck Simulator 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 576500,
+      "name": "Evergarden",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 582270,
+      "name": "Everything",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 273350,
+      "name": "Evolve Stage 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 21100,
+      "name": "F.E.A.R. 3",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 223650,
+      "name": "F.E.A.R. Online",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 497260,
+      "name": "Fabulous Food Truck",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 397060,
+      "name": "Faeria",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1179080,
+      "name": "FAITH",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 467010,
+      "name": "Fall of Civilization",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 38400,
+      "name": "Fallout",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 22370,
+      "name": "Fallout 3 - Game of the Year Edition",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 377160,
+      "name": "Fallout 4",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 22380,
+      "name": "Fallout: New Vegas",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 514470,
+      "name": "Fantastic 4 In A Row 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 514480,
+      "name": "Fantastic Checkers 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 298110,
+      "name": "Far Cry 4",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 552520,
+      "name": "Far Cry 5",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 939960,
+      "name": "Far Cry New Dawn",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 220240,
+      "name": "Far Cry\u00AE 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 233270,
+      "name": "Far Cry\u00AE 3 Blood Dragon",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 246840,
+      "name": "FATE",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 303690,
+      "name": "FATE: The Cursed King",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 303680,
+      "name": "FATE: The Traitor Soul",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 276890,
+      "name": "FATE: Undiscovered Realms",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 317030,
+      "name": "Fatty Bear\u0027s Birthday Surprise",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 585550,
+      "name": "FEMINAZI: The Triggering",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 660160,
+      "name": "Field of Glory II",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 410590,
+      "name": "Fiends of Imprisonment",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 512640,
+      "name": "Final Quest",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 540020,
+      "name": "Final Quest II",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 321110,
+      "name": "Fist of Jesus",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 265630,
+      "name": "Fistful of Frags",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 383580,
+      "name": "Flesh Eaters",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 371390,
+      "name": "Flix The Flea",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 885630,
+      "name": "Floor Massacre",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 508180,
+      "name": "Fly and Destroy",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 304390,
+      "name": "FOR HONOR",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 654310,
+      "name": "For Honor - Public Test",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 461910,
+      "name": "Forge of Gods (RPG)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 334210,
+      "name": "Fortified",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 253530,
+      "name": "Fortress Forever",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4731620,
+      "name": "Fortune Mill",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 883680,
+      "name": "Four Kings One War",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2707940,
+      "name": "FPV Kamikaze Drone",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 310380,
+      "name": "Fractured Space",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 487220,
+      "name": "Freebie",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1045050,
+      "name": "Furry Girl \uD83D\uDC3A",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1992370,
+      "name": "FURRY HITLER",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1334590,
+      "name": "Furry Love",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1714420,
+      "name": "Fursan al-Aqsa: The Knights of the Al-Aqsa Mosque",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2445980,
+      "name": "G-Rebels",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 403740,
+      "name": "GabeN: The Final Decision",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1085510,
+      "name": "Garfield Kart - Furious Racing",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4000,
+      "name": "Garry\u0027s Mod",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 301480,
+      "name": "GEARCRACK Arena",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 557680,
+      "name": "Germ Wars",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 6200,
+      "name": "Ghost Master",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 1139900,
+      "name": "Ghostrunner",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1249200,
+      "name": "Ghostrunner Demo",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 555000,
+      "name": "GOAT OF DUTY",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1245430,
+      "name": "Golden Light",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 397620,
+      "name": "GooCubelets",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 416270,
+      "name": "GooCubelets 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 431270,
+      "name": "GooCubelets: The Algoorithm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 253920,
+      "name": "Gorky 17",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 206210,
+      "name": "Gotham City Impostors: Free To Play",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 373140,
+      "name": "Grail to the Thief",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3240220,
+      "name": "Grand Theft Auto V Enhanced",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 271590,
+      "name": "Grand Theft Auto V Legacy",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 355150,
+      "name": "gravilon",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 12750,
+      "name": "GRID",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 44350,
+      "name": "GRID 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 823040,
+      "name": "Griefer",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 252150,
+      "name": "Grimm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 335430,
+      "name": "Grimoire: Manastorm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 493520,
+      "name": "GTFO",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 8660,
+      "name": "GTR Evolution",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 541200,
+      "name": "GTTOD",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 275390,
+      "name": "Guacamelee! Super Turbo Championship Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 407840,
+      "name": "Guardians of Orion (Phase 2)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 385080,
+      "name": "Guardians of Victoria",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 267920,
+      "name": "Gun Metal",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 239450,
+      "name": "Gun Monkeys",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 241720,
+      "name": "Guncraft",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 371510,
+      "name": "Gunnheim",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 608800,
+      "name": "Guns of Icarus Alliance",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 209080,
+      "name": "Guns of Icarus Online",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 439700,
+      "name": "H1Z1: Test Server",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 365450,
+      "name": "Hacknet",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 526740,
+      "name": "hack_me",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 70,
+      "name": "Half-Life",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 220,
+      "name": "Half-Life 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 320,
+      "name": "Half-Life 2: Deathmatch",
+      "type": "game",
+      "installed": true
+    },
+    {
+      "appid": 360,
+      "name": "Half-Life Deathmatch: Source",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 546560,
+      "name": "Half-Life: Alyx",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 1240440,
+      "name": "Halo Infinite",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 976730,
+      "name": "Halo: The Master Chief Collection",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1433340,
+      "name": "Happy\u0027s Humble Burger Farm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 341940,
+      "name": "Hatred",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 797410,
+      "name": "Headsnatchers",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 394360,
+      "name": "Hearts of Iron IV",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 400250,
+      "name": "Heaven Island - VR MMO",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 686810,
+      "name": "Hell Let Loose",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 1504860,
+      "name": "Hell Let Loose (Public Testing)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 205230,
+      "name": "Hell Yeah!",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 553850,
+      "name": "HELLDIVERS\u2122 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 453820,
+      "name": "Hero Quest: Tower Conflict",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 227940,
+      "name": "Heroes \u0026 Generals",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 6850,
+      "name": "Hitman 2: Silent Assassin",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 1659040,
+      "name": "HITMAN World of Assassination",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 203140,
+      "name": "Hitman: Absolution",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 205930,
+      "name": "Hitman: Sniper Challenge",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 589290,
+      "name": "Holdfast: Nations At War",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 55100,
+      "name": "Homefront",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 267980,
+      "name": "Hostile Waters: Antaeus Rising",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 450540,
+      "name": "Hot Dogs, Horseshoes \u0026 Hand Grenades",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 382560,
+      "name": "Hot Lava",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 219150,
+      "name": "Hotline Miami",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 274170,
+      "name": "Hotline Miami 2: Wrong Number",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 613100,
+      "name": "House Flipper",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4001890,
+      "name": "How to Fish",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 250400,
+      "name": "How to Survive",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 271640,
+      "name": "Humanity Asset",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 586970,
+      "name": "Hungry Flame",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 905790,
+      "name": "Hungry Shadows",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 594650,
+      "name": "Hunt: Showdown 1896",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 770720,
+      "name": "Hunt: Showdown 1896 (Test Server)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 515470,
+      "name": "Hyper color ball",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1743850,
+      "name": "HYPER DEMON",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 267960,
+      "name": "Hyper Fighters",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 402390,
+      "name": "Hyperdrive Massacre",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 307230,
+      "name": "I, Zombie",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 15320,
+      "name": "IL-2 Sturmovik: 1946",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 344880,
+      "name": "In Exilium",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 391660,
+      "name": "Incitement 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 283390,
+      "name": "Incoming \u002B Incoming Forces",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 242700,
+      "name": "Injustice: Gods Among Us Ultimate Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 467000,
+      "name": "Insincere",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 222880,
+      "name": "Insurgency",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 581320,
+      "name": "Insurgency: Sandstorm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 887860,
+      "name": "Insurgency: Sandstorm Community Test Environment",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 346370,
+      "name": "Into The War",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1486630,
+      "name": "Intravenous",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 397980,
+      "name": "Invasion",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 423710,
+      "name": "Invasion: Brain Craving",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 496870,
+      "name": "Inverted",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 296180,
+      "name": "Iron Storm",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1703140,
+      "name": "Isle of Jura",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 869480,
+      "name": "Jabroni Brawl: Episode 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 283270,
+      "name": "Jagged Alliance Gold",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 205950,
+      "name": "Jet Set Radio",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 513740,
+      "name": "Joana\u0027s Life",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 323580,
+      "name": "Jotun: Valhalla Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 973810,
+      "name": "Journey To The Savage Planet",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 8190,
+      "name": "Just Cause 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 225540,
+      "name": "Just Cause 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 295110,
+      "name": "Just Survive",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 362300,
+      "name": "Just Survive Test Server",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1048540,
+      "name": "Kao the Kangaroo: Round 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 343710,
+      "name": "KHOLAT",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 261110,
+      "name": "Killer is Dead",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1250,
+      "name": "Killing Floor",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 232090,
+      "name": "Killing Floor 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 35420,
+      "name": "Killing Floor Mod: Defence Alliance 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 466730,
+      "name": "King\u0027s Guard TD",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 368230,
+      "name": "Kingdom: Classic",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 500580,
+      "name": "Kitty Cat: Jigsaw Puzzles",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 428950,
+      "name": "Kivi, Toilet and Shotgun",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1911390,
+      "name": "Knightfall: A Daring Journey",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 253900,
+      "name": "Knights and Merchants",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 778830,
+      "name": "Knights of Hearts",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 254060,
+      "name": "KnightShift",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 296630,
+      "name": "Kraven Manor",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 654950,
+      "name": "Labyrinth Escape",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 289690,
+      "name": "Lara Croft and the Temple of Osiris",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 493710,
+      "name": "Laraan",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1346980,
+      "name": "Lawnmower Game: Next Generation",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 391720,
+      "name": "Layers of Fear (2016)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 550,
+      "name": "Left 4 Dead 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 285160,
+      "name": "LEGO\u00AE The Hobbit\u2122",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 214510,
+      "name": "LEGO\u00AE The Lord of the Rings\u2122",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1966720,
+      "name": "Lethal Company",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 261180,
+      "name": "Lethal League",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 385590,
+      "name": "Lethal RPG: War",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 527480,
+      "name": "Life Beetle",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 48000,
+      "name": "LIMBO",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 283430,
+      "name": "Litil Divil",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 424840,
+      "name": "Little Nightmares",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2149010,
+      "name": "Little Nightmares Enhanced Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 463100,
+      "name": "Liveza: Death of the Earth",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 208090,
+      "name": "Loadout",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1599340,
+      "name": "Lost Ark",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 528090,
+      "name": "Lost In Woods 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 487580,
+      "name": "Ludo Supremo",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 412600,
+      "name": "Lup",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1507190,
+      "name": "Machinika Museum",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 40990,
+      "name": "Mafia",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 209630,
+      "name": "Magrunner: Dark Pulse",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 500570,
+      "name": "Mahjong Deluxe 2: Astral Planes",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 462220,
+      "name": "Mahjong Deluxe 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 491580,
+      "name": "Mahjong Destiny",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 542690,
+      "name": "Mahsung Deluxe",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 417990,
+      "name": "Major\\Minor",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 475490,
+      "name": "Major\\Minor",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 515040,
+      "name": "Make America Great Again: The Trump Presidency",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 302250,
+      "name": "Manhunter",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 370510,
+      "name": "Marble Mayhem: Fragile Ball",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 283370,
+      "name": "Marine Sharpshooter II: Jungle Warfare",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 24980,
+      "name": "Mass Effect 2 (2010)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2362420,
+      "name": "Mass Effect 2 (2010) Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1238020,
+      "name": "Mass Effect 3 (2012)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 204100,
+      "name": "Max Payne 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4704690,
+      "name": "MECCHA CHAMELEON",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 307070,
+      "name": "Memories of a Vagabond",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 294020,
+      "name": "Merchants of Kaidan",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 311340,
+      "name": "METAL GEAR SOLID V: GROUND ZEROES",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 287700,
+      "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3091340,
+      "name": "Metal Thunder",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 43110,
+      "name": "Metro 2033",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 286690,
+      "name": "Metro 2033 Redux",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 412020,
+      "name": "Metro Exodus",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1449560,
+      "name": "Metro Exodus Enhanced Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 43160,
+      "name": "Metro: Last Light Complete Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 287390,
+      "name": "Metro: Last Light Redux",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 546980,
+      "name": "Midnight Carnival",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 468320,
+      "name": "Mini Golf Mundo",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 481870,
+      "name": "Mini Thief",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 521930,
+      "name": "Minimized",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 489520,
+      "name": "Minion Masters",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 17410,
+      "name": "Mirror\u0027s Edge",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 1233570,
+      "name": "Mirror\u0027s Edge\u2122 Catalyst",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 113020,
+      "name": "Monaco",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 796510,
+      "name": "Monkey Slap",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 493700,
+      "name": "Monster Puzzle",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 39000,
+      "name": "Moonbase Alpha",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 606150,
+      "name": "Moonlighter",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 48700,
+      "name": "Mount \u0026 Blade: Warband",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 776960,
+      "name": "Mouse (Sneaking)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 796640,
+      "name": "Mr.Jezko",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 274900,
+      "name": "Murder Miners",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 544140,
+      "name": "Murder Mystery Adventure",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 638070,
+      "name": "Murderous Pursuits",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 434260,
+      "name": "My Name is Mayo",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 498050,
+      "name": "Mystery Of Rivenhallows",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 385800,
+      "name": "NEKOPARA Vol. 0",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 454200,
+      "name": "Neon Hardcorps",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 556280,
+      "name": "Neon Prism",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 468490,
+      "name": "Neon Space",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 505210,
+      "name": "Neon Space 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 628950,
+      "name": "Nephise Begins",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 247730,
+      "name": "Nether",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 375510,
+      "name": "New kind of adventure",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 931910,
+      "name": "New York Flight Simulator 2001",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 284810,
+      "name": "Nightmares from the Deep 3: Davy Jones",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 275850,
+      "name": "No Man\u0027s Sky",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 496550,
+      "name": "Noob Squad",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2909110,
+      "name": "Nuclear Nightmare",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2168680,
+      "name": "Nuclear Option",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 301700,
+      "name": "Numba Deluxe",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 963330,
+      "name": "Nya Nya Nya Girls (\u02BB\u02BB\u02BB)_(=^\uFF65\u03C9\uFF65^=)_(\u02BB\u02BB\u02BB)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 254460,
+      "name": "Obscure",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 15700,
+      "name": "Oddworld: Abe\u0027s Oddysee",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 769920,
+      "name": "Odysseus Kosmos and his Robot Quest - Episode 1",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 243000,
+      "name": "Omikron - The Nomad Soul",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 621530,
+      "name": "One Star",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 367570,
+      "name": "oO",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 736590,
+      "name": "Operation: Harsh Doorstop",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 586620,
+      "name": "OR",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 308580,
+      "name": "Orborun",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 365310,
+      "name": "Organ Biker",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 104900,
+      "name": "ORION: Prelude",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 491950,
+      "name": "Orwell",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 337270,
+      "name": "Ostrich Island",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 307430,
+      "name": "Othello",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3767740,
+      "name": "Outhold",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 305050,
+      "name": "Outland",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 238320,
+      "name": "Outlast",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 457820,
+      "name": "Outrage",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 343100,
+      "name": "Overture",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 441380,
+      "name": "PAC-MAN\u2122 CHAMPIONSHIP EDITION 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1458140,
+      "name": "Pacific Drive",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 337320,
+      "name": "Paint the Town Red",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 444090,
+      "name": "Paladins",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 596350,
+      "name": "Paladins - Public Test",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 562410,
+      "name": "Panty Party",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 379980,
+      "name": "Panzermadels: Tank Dating Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 295690,
+      "name": "PARTICLE MACE",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2796010,
+      "name": "Party Club",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 238960,
+      "name": "Path of Exile",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 218620,
+      "name": "PAYDAY 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 1272080,
+      "name": "PAYDAY 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 24240,
+      "name": "PAYDAY: The Heist",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 487590,
+      "name": "Pepe Porcupine",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 254040,
+      "name": "Pirates of Black Cove Gold",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 466790,
+      "name": "PixBit",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1058200,
+      "name": "Pixel Puzzles Traditional Jigsaw Puzzles",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 284950,
+      "name": "Pixel Puzzles: Japan",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 915320,
+      "name": "Pixel Strike 3D",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 243780,
+      "name": "PixelJunk\u2122 Monsters Ultimate",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 737330,
+      "name": "Pixelord",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 233250,
+      "name": "Planetary Annihilation",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 386070,
+      "name": "Planetary Annihilation: TITANS",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 218510,
+      "name": "Planets Under Attack",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 218230,
+      "name": "PlanetSide 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1083500,
+      "name": "PlanetSide 2 - Test",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 319180,
+      "name": "Platypus II",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 234710,
+      "name": "Poker Night 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3897800,
+      "name": "Poker Night at the Inventory",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 31280,
+      "name": "Poker Night at the Inventory (2010 Original Version)",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 441050,
+      "name": "Polandball: Can into Space!",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 315430,
+      "name": "Polarity",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 367450,
+      "name": "Poly Bridge",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1241100,
+      "name": "POLYGON",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 684680,
+      "name": "Polygoneer",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 369000,
+      "name": "Pongo",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 400,
+      "name": "Portal",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 620,
+      "name": "Portal 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 2012840,
+      "name": "Portal with RTX",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 232770,
+      "name": "POSTAL",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 223470,
+      "name": "POSTAL 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 312640,
+      "name": "Power-Up",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1290000,
+      "name": "PowerWash Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 224220,
+      "name": "Pressure",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 480490,
+      "name": "Prey",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 490220,
+      "name": "Prismata",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 540390,
+      "name": "Project 1v1 Closed Technical Test",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 234630,
+      "name": "Project CARS",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 388160,
+      "name": "Project Druid - 2D Labyrinth Explorer-",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 454890,
+      "name": "Project Starship",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3830,
+      "name": "Psychonauts",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 438010,
+      "name": "PulseCharge",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 500590,
+      "name": "Puppy Dog: Jigsaw Puzzles",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 473470,
+      "name": "Purgatory",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 489890,
+      "name": "Puzzles At Mystery Manor",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 487600,
+      "name": "Puzzles Under The Hill",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 203730,
+      "name": "Q.U.B.E.",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 239430,
+      "name": "Q.U.B.E: Director\u0027s Cut",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 611500,
+      "name": "Quake Champions",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 344040,
+      "name": "Qubburo 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 351510,
+      "name": "Quiplash",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 448630,
+      "name": "Rabiez: Epidemic",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 8600,
+      "name": "RACE 07",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 253030,
+      "name": "Race The Sun",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 292380,
+      "name": "Racer 8",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 211500,
+      "name": "RaceRoom Racing Experience ",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 301750,
+      "name": "RADical ROACH Remastered",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 486150,
+      "name": "Radical Spectrum: Volume 1",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 554310,
+      "name": "Rage Wars",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1895880,
+      "name": "Ratchet \u0026 Clank: Rift Apart",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 338170,
+      "name": "Ratz Instagib",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1144200,
+      "name": "Ready or Not",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 201570,
+      "name": "Really Big Sky",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 234190,
+      "name": "Receiver",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 55110,
+      "name": "Red Faction: Armageddon",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 745740,
+      "name": "Reflex",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 680360,
+      "name": "Regions Of Ruin",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 341640,
+      "name": "Relativity Wars - A Science Space RTS",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 382490,
+      "name": "Relic Hunters Zero: Remix",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 491650,
+      "name": "Reset 1-1",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 254700,
+      "name": "Resident Evil 4 (2005)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1239690,
+      "name": "Retrowave",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 60,
+      "name": "Ricochet",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 418460,
+      "name": "Rising Storm 2: Vietnam",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 35450,
+      "name": "Rising Storm/Red Orchestra 2 Multiplayer",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 632360,
+      "name": "Risk of Rain 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 887710,
+      "name": "Ritter",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1681430,
+      "name": "RoboCop: Rogue City",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 692890,
+      "name": "Roboquest",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 872200,
+      "name": "Rogue Company",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 390970,
+      "name": "Russian Horror Story",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 252490,
+      "name": "Rust",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 351140,
+      "name": "Rustbucket Rumble",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 435120,
+      "name": "Rusty Lake Hotel",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 370190,
+      "name": "Ruzh Delta Z",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 286940,
+      "name": "S.K.I.L.L. - Special Force 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 41700,
+      "name": "S.T.A.L.K.E.R.: Call of Pripyat",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 2427430,
+      "name": "S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 20510,
+      "name": "S.T.A.L.K.E.R.: Clear Sky",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 2427420,
+      "name": "S.T.A.L.K.E.R.: Clear Sky - Enhanced Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4500,
+      "name": "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 2427410,
+      "name": "S.T.A.L.K.E.R.: Shadow of Chornobyl - Enhanced Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 9480,
+      "name": "Saints Row 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 206420,
+      "name": "Saints Row IV",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 55230,
+      "name": "Saints Row: The Third",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 407980,
+      "name": "Sakura Beach 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 210770,
+      "name": "Sanctum 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 526870,
+      "name": "Satisfactory",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 509220,
+      "name": "Save Jesus",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 813540,
+      "name": "Scheming Through The Zombie Apocalypse: The Beginning",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 700330,
+      "name": "SCP: Secret Laboratory",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 832470,
+      "name": "Season Up",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 34270,
+      "name": "SEGA Mega Drive \u0026 Genesis Classics",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 1227690,
+      "name": "Severed Steel",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 233130,
+      "name": "Shadow Warrior",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 324800,
+      "name": "Shadow Warrior 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 234650,
+      "name": "Shadowrun Returns",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 286360,
+      "name": "Shadows on the Vatican - Act I: Greed",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 497050,
+      "name": "ShapeShifter",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 666020,
+      "name": "Shark Dating Simulator XL\u002B",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2087030,
+      "name": "Shatterline",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 758330,
+      "name": "Shenmue I \u0026 II",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 485730,
+      "name": "Shift",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 422250,
+      "name": "ShipLord",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 372820,
+      "name": "Shot In The Dark",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3910,
+      "name": "Sid Meier\u0027s Civilization III: Complete",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 501930,
+      "name": "Sig.Null",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 809320,
+      "name": "Silent Tweets",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 204880,
+      "name": "Sins of a Solar Empire: Rebellion",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 242880,
+      "name": "Sir, You Are Being Hunted",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 365720,
+      "name": "Skyrim Script Extender (SKSE)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 567290,
+      "name": "Slash It",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 583760,
+      "name": "Slash It 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 946400,
+      "name": "Slime Quest",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 433340,
+      "name": "Slime Rancher",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1657630,
+      "name": "Slime Rancher 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 386360,
+      "name": "SMITE",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 858460,
+      "name": "SMITE - Public Test",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 271500,
+      "name": "Sniper Art of Victory",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 4323130,
+      "name": "Sniper Camouflage Orange Spy Warrior I Buried Two Bodies in the Garden and the Police Haven\u0027t Figured Out Yet That They\u0027re Missing Because They Were a Lonely Old Couple Who Had No Relatives Simulator 2026",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 238090,
+      "name": "Sniper Elite 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 312660,
+      "name": "Sniper Elite 4",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1029690,
+      "name": "Sniper Elite 5",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 34870,
+      "name": "Sniper Ghost Warrior 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 34830,
+      "name": "Sniper: Ghost Warrior",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 513590,
+      "name": "So Many Cubes",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 244850,
+      "name": "Space Engineers",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 298900,
+      "name": "Space Hulk: Deathwing",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 816090,
+      "name": "Space Hulk: Deathwing - Enhanced Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 521940,
+      "name": "Space Incident",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 380580,
+      "name": "SpaceCorn",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 480,
+      "name": "Spacewar",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 388120,
+      "name": "Spakoyno: Back To USSR 2.0",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 50300,
+      "name": "Spec Ops: The Line",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 251690,
+      "name": "Speedball 2 HD",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 509110,
+      "name": "Spikit",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 528660,
+      "name": "Spin Rush",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3573040,
+      "name": "Squad 22: ZOV",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 513630,
+      "name": "Squeezone",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 318430,
+      "name": "Squishy the Suicidal Pig",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 383330,
+      "name": "Star Chronicles: Delta Quadrant",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 485330,
+      "name": "Star Drifter",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 499420,
+      "name": "Star Fields",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 6060,
+      "name": "Star Wars: Battlefront 2 (Classic, 2005)",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 1237950,
+      "name": "STAR WARS\u2122 Battlefront\u2122 II",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 458030,
+      "name": "StarFringe: Adversus",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 236150,
+      "name": "Starpoint Gemini 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 463210,
+      "name": "State of Anarchy",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 329380,
+      "name": "Stealth Inc 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 619700,
+      "name": "Steel Rats",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 391070,
+      "name": "Stellar 2D",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 711210,
+      "name": "StepX",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 403570,
+      "name": "Stigmat",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 521230,
+      "name": "Stone Age Wars",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 676210,
+      "name": "Story of the Survivor : Prisoner",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 312670,
+      "name": "Strange Brigade",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 252850,
+      "name": "Streamline",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 232890,
+      "name": "Stronghold Crusader 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 818790,
+      "name": "Stunt Hill",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 264710,
+      "name": "Subnautica",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 848450,
+      "name": "Subnautica: Below Zero",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 388340,
+      "name": "Super Hipster Lumberjack",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 271860,
+      "name": "Super Killer Hornet: Resurrection",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 469730,
+      "name": "Super Mega Neo Pug",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 438180,
+      "name": "Super Mustache",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 466840,
+      "name": "Super Space Pug",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 503300,
+      "name": "Super Star",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1049410,
+      "name": "Superliminal",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1645820,
+      "name": "SurrounDead",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 467950,
+      "name": "Survive in Space",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 258050,
+      "name": "Survivor Squad",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 532600,
+      "name": "Sweet Candy Mahjong",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 295930,
+      "name": "Swipecart",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 581630,
+      "name": "Sword With Sauce",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 46500,
+      "name": "Syberia",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 46510,
+      "name": "Syberia 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 528230,
+      "name": "SYNTHETIK",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 51100,
+      "name": "Tactical Intervention",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 744550,
+      "name": "Tactical Operations",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 375520,
+      "name": "Taimumari: Definitive Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 633460,
+      "name": "Tannenberg",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 440,
+      "name": "Team Fortress 2",
+      "type": "game",
+      "installed": true
+    },
+    {
+      "appid": 3545060,
+      "name": "Team Fortress 2 Classified",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 20,
+      "name": "Team Fortress Classic",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 234390,
+      "name": "Teleglitch: Die More Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1180660,
+      "name": "Tell Me Why",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 347560,
+      "name": "Terra Incognita Chapter One: The Descendant",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 105600,
+      "name": "Terraria",
+      "type": "game",
+      "installed": true
+    },
+    {
+      "appid": 443910,
+      "name": "TGV Voyages Train Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 113200,
+      "name": "The Binding of Isaac",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 437220,
+      "name": "The Culling",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 468220,
+      "name": "The Culling: Day 1 Reference",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 420740,
+      "name": "The Deed",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 466800,
+      "name": "The Dope Game",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 94300,
+      "name": "The Dream Machine",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 412290,
+      "name": "The Dreamlord",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 306130,
+      "name": "The Elder Scrolls Online",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 72850,
+      "name": "The Elder Scrolls V: Skyrim",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 489830,
+      "name": "The Elder Scrolls V: Skyrim Special Edition",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 1730590,
+      "name": "The Entropy Centre",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 242760,
+      "name": "The Forest",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 498040,
+      "name": "The Hidden Dragon",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 306040,
+      "name": "The Howler",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 545700,
+      "name": "The Land of Dasthir",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 640590,
+      "name": "The LEGO\u00AE NINJAGO\u00AE Movie Video Game",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 503830,
+      "name": "The Life Of Greather",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 360940,
+      "name": "The Mean Greens - Plastic Warfare",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 578650,
+      "name": "The Outer Worlds",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1920490,
+      "name": "The Outer Worlds: Spacer\u0027s Choice Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1148350,
+      "name": "The Powder Toy",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 265590,
+      "name": "The Red Solstice",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 329950,
+      "name": "The Slaughtering Grounds",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 221910,
+      "name": "The Stanley Parable",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1703340,
+      "name": "The Stanley Parable: Ultra Deluxe",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 96000,
+      "name": "The Tiny Bang Story",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 377310,
+      "name": "The Tower Of Elements",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 210970,
+      "name": "The Witness",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 518790,
+      "name": "theHunter: Call of the Wild\u2122",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 449540,
+      "name": "There\u0027s Poop In My Soup",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 432150,
+      "name": "They Came From The Moon",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1142130,
+      "name": "They Can\u0027t Stop All Of Us",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 803390,
+      "name": "Thunderbolt",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 855050,
+      "name": "Thunderbolt 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 37400,
+      "name": "Time Gentlemen, Please!",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 290650,
+      "name": "Time Ramesside (A New Reckoning)",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 399430,
+      "name": "Tinboy",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1712840,
+      "name": "Tiny Tina\u0027s Assault on Dragon Keep: A Wonderlands One-shot Adventure",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 475150,
+      "name": "Titan Quest Anniversary Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1237970,
+      "name": "Titanfall\u00AE 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1454890,
+      "name": "Titanfall\u2122",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1281930,
+      "name": "tModLoader",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 359550,
+      "name": "Tom Clancy\u0027s Rainbow Six Siege",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 623990,
+      "name": "Tom Clancy\u0027s Rainbow Six Siege - Test Server",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 365590,
+      "name": "Tom Clancy\u0027s The Division",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2221490,
+      "name": "Tom Clancy\u0027s The Division 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 2441950,
+      "name": "Tom Clancy\u0027s The Division 2 - Test Server",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 203160,
+      "name": "Tomb Raider",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 34330,
+      "name": "Total War: SHOGUN 2",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 508440,
+      "name": "Totally Accurate Battle Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 615000,
+      "name": "Totally Accurate Battle Zombielator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 823130,
+      "name": "Totally Accurate Battlegrounds",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 546990,
+      "name": "Town of Night",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 98300,
+      "name": "Toy Soldiers",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 983560,
+      "name": "Trap Furry Puzzle",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1164940,
+      "name": "Trepang2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 17080,
+      "name": "Tribes: Ascend",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 410560,
+      "name": "Trinium Wars",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 23490,
+      "name": "Tropico 3 - Steam Special Edition",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 1881200,
+      "name": "TRYP FPV",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 4855760,
+      "name": "Tung Tung Tung Survival",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 418070,
+      "name": "Turbo Pug",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 528510,
+      "name": "Turbo Pug 3D",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 513780,
+      "name": "Turbo Pug DX",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 905060,
+      "name": "Turret Tech",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 7520,
+      "name": "Two Worlds II HD",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1930,
+      "name": "Two Worlds: Epic Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1853200,
+      "name": "TYRONE vs COPS",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 291210,
+      "name": "UberStrike",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 616560,
+      "name": "Ultimate Epic Battle Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 514490,
+      "name": "Ultimate Word Search 2: Letter Boxed",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1229490,
+      "name": "ULTRAKILL",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1682970,
+      "name": "Uncrashed : FPV Drone Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 370100,
+      "name": "Uncrowded",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 454930,
+      "name": "Under Zero",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 304930,
+      "name": "Unturned",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 586960,
+      "name": "Upside Down",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 262150,
+      "name": "Vanguard Princess",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 242860,
+      "name": "Verdun",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 272890,
+      "name": "Vertiginous Golf",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 300220,
+      "name": "Victim of Xen",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 255520,
+      "name": "Viscera Cleanup Detail: Shadow Warrior",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2615540,
+      "name": "VOID/BREAKER",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 438100,
+      "name": "VRChat",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 317380,
+      "name": "War on Folvos",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1867240,
+      "name": "WARDOGS",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 291480,
+      "name": "Warface: Clutch",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 230410,
+      "name": "Warframe",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1361210,
+      "name": "Warhammer 40,000: Darktide",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 489630,
+      "name": "Warhammer 40,000: Gladius - Relics of War",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 55150,
+      "name": "Warhammer 40,000: Space Marine - Anniversary Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2183900,
+      "name": "Warhammer 40,000: Space Marine 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 3417590,
+      "name": "Warhammer 40,000: Space Marine 2 - Public Test Server",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 1022310,
+      "name": "Warhammer Underworlds - Shadespire Edition",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 552500,
+      "name": "Warhammer: Vermintide 2",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 391460,
+      "name": "WARMODE",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 515690,
+      "name": "Warriors of Vilvatikta",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 447040,
+      "name": "Watch_Dogs 2",
+      "type": "Game",
+      "installed": true
+    },
+    {
+      "appid": 394130,
+      "name": "Water Bears VR",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 373600,
+      "name": "Weapon of Choice",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 226120,
+      "name": "Weird Worlds: Return to Infinite Space",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 432020,
+      "name": "What\u0027s under your blanket !?",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 531860,
+      "name": "Where\u0027s My What?",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 331710,
+      "name": "Why So Evil",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 354850,
+      "name": "Why So Evil 2: Dystopia",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 331570,
+      "name": "Wimp: Who Stole My Pants?",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 3156770,
+      "name": "Witchfire",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 485420,
+      "name": "Wolf Simulator",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 2270,
+      "name": "Wolfenstein 3D",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 201810,
+      "name": "Wolfenstein: The New Order",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 299460,
+      "name": "Woodle Tree Adventures",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 674020,
+      "name": "World War 3",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 892520,
+      "name": "World War 3 PTE",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 7510,
+      "name": "X-Blades",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 7760,
+      "name": "X-COM: UFO Defense",
+      "type": "game",
+      "installed": false
+    },
+    {
+      "appid": 200510,
+      "name": "XCOM: Enemy Unknown",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 270550,
+      "name": "Yet Another Zombie Defense",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 433850,
+      "name": "Z1 Battle Royale",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 301640,
+      "name": "Zombie Army Trilogy",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 790230,
+      "name": "Zombie Clicker Defense",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 220820,
+      "name": "Zombie Driver HD",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 366890,
+      "name": "Zombie Zoeds",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 823650,
+      "name": "Zombow",
+      "type": "Game",
+      "installed": false
+    },
+    {
+      "appid": 939620,
+      "name": "\u8DA3\u62FC\u62FC\uFF1A\u8096\u50CF\u753B Pleasure Puzzle:Portrait",
+      "type": "Game",
+      "installed": false
+    }
+  ]
+}
