@@ -1,5 +1,6 @@
-using SteamKit2;
-using SteamKit2.Internal;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using Microsoft.Win32;
 
 namespace WinFormsApp1;
 
@@ -7,131 +8,160 @@ internal sealed class SteamIdle : IDisposable
 {
     public const int MaxGames = 34;
 
-    private readonly SteamClient _client = new();
-    private readonly CallbackManager _callbacks;
-    private readonly SteamUser _user;
-    private readonly CancellationTokenSource _shutdown = new();
-    private readonly Task _pump;
+    private readonly Dictionary<uint, Process> _processes = new();
 
-    private TaskCompletionSource<string?>? _logon;
-    private string? _pendingAuthCode;
-    private string? _pendingTwoFactorCode;
-    private bool _connected;
+    public bool IsConnected => _processes.Values.Any(process => !process.HasExited);
 
-    public SteamIdle()
+    public IReadOnlyList<uint> Playing => _processes.Keys.ToArray();
+
+    public Task SetPlayingAsync(IReadOnlyList<uint> appIds)
     {
-        _callbacks = new CallbackManager(_client);
-        _user = _client.GetHandler<SteamUser>()!;
-        _callbacks.Subscribe<SteamClient.ConnectedCallback>(_ => OnConnected());
-        _callbacks.Subscribe<SteamClient.DisconnectedCallback>(_ => OnDisconnected());
-        _callbacks.Subscribe<SteamUser.LoggedOnCallback>(OnLoggedOn);
-        _pump = Task.Run(Pump);
-    }
-
-    public bool IsLoggedOn { get; private set; }
-
-    public IReadOnlyList<uint> Playing { get; private set; } = [];
-
-    public Task<string?> LogOnAsync(string username, string password, string? authCode, string? twoFactorCode, CancellationToken cancellationToken)
-    {
-        if (IsLoggedOn)
+        var selected = appIds.Distinct().Take(MaxGames).ToArray();
+        return Task.Run(() =>
         {
-            return Task.FromResult<string?>(null);
-        }
+            foreach (var appId in _processes.Keys.Except(selected).ToArray())
+            {
+                Stop(_processes[appId]);
+                _processes.Remove(appId);
+            }
 
-        _username = username;
-        _password = password;
-        _pendingAuthCode = authCode;
-        _pendingTwoFactorCode = twoFactorCode;
-        _logon = new TaskCompletionSource<string?>(TaskCreationOptions.RunContinuationsAsynchronously);
-        _client.Connect();
-        return _logon.Task.WaitAsync(cancellationToken);
-    }
+            foreach (var appId in selected)
+            {
+                if (_processes.TryGetValue(appId, out var existing) && !existing.HasExited)
+                {
+                    continue;
+                }
 
-    public void SetPlaying(IReadOnlyList<uint> appIds)
-    {
-        if (!IsLoggedOn)
-        {
-            throw new InvalidOperationException("Not logged on to Steam.");
-        }
-
-        var message = new ClientMsgProtobuf<CMsgClientGamesPlayed>(EMsg.ClientGamesPlayed);
-        foreach (var appId in appIds.Take(MaxGames))
-        {
-            message.Body.games_played.Add(new CMsgClientGamesPlayed.GamePlayed { game_id = appId });
-        }
-
-        _client.Send(message);
-        Playing = appIds.Take(MaxGames).ToArray();
+                _processes[appId] = Start(appId);
+            }
+        });
     }
 
     public void Dispose()
     {
-        if (IsLoggedOn)
+        foreach (var process in _processes.Values)
+        {
+            Stop(process);
+        }
+
+        _processes.Clear();
+    }
+
+    private static Process Start(uint appId)
+    {
+        var process = new Process
+        {
+            StartInfo = new ProcessStartInfo
+            {
+                FileName = Environment.ProcessPath ?? throw new InvalidOperationException("The application path is not available."),
+                Arguments = $"--idle {appId}",
+                UseShellExecute = false,
+                EnvironmentVariables = { ["SteamAppId"] = appId.ToString() },
+                CreateNoWindow = true,
+            },
+        };
+        process.Start();
+        return process;
+    }
+
+    private static void Stop(Process process)
+    {
+        try
+        {
+            if (!process.HasExited)
+            {
+                process.Kill(entireProcessTree: true);
+                process.WaitForExit(2000);
+            }
+        }
+        catch (Exception)
+        {
+            // The process has already gone away.
+        }
+        finally
+        {
+            process.Dispose();
+        }
+    }
+
+    public static void Hold(uint appId)
+    {
+        using var pipe = GamePipe.Open(ClientLibraryPath(), appId);
+        using var stop = new ManualResetEvent(false);
+        Console.CancelKeyPress += (_, eventArgs) =>
+        {
+            eventArgs.Cancel = true;
+            stop.Set();
+        };
+        stop.WaitOne();
+    }
+
+    private static string ClientLibraryPath()
+    {
+        var path = Registry.GetValue(@"HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess", "SteamClientDll64", null) as string;
+        if (string.IsNullOrWhiteSpace(path) || !File.Exists(path))
+        {
+            throw new InvalidOperationException("Steam is not installed, or its client library could not be found.");
+        }
+
+        return path;
+    }
+
+    private sealed class GamePipe : IDisposable
+    {
+        private readonly nint _module;
+        private readonly int _pipe;
+
+        private GamePipe(nint module, int pipe)
+        {
+            _module = module;
+            _pipe = pipe;
+        }
+
+        public static GamePipe Open(string clientPath, uint appId)
+        {
+            var module = NativeLibrary.Load(clientPath);
+            try
+            {
+                var createPipe = Export<CreatePipeDelegate>(module, "Steam_CreateSteamPipe");
+                var connectUser = Export<ConnectUserDelegate>(module, "Steam_ConnectToGlobalUser");
+                var loggedOn = Export<LoggedOnDelegate>(module, "Steam_BLoggedOn");
+                var pipe = createPipe();
+                var user = connectUser(pipe);
+                if (pipe == 0 || user == 0 || loggedOn(user, pipe) == 0)
+                {
+                    throw new InvalidOperationException("Steam is not running, or no account is logged in to the open Steam client.");
+                }
+
+                return new GamePipe(module, pipe);
+            }
+            catch
+            {
+                NativeLibrary.Free(module);
+                throw;
+            }
+        }
+
+        public void Dispose()
         {
             try
             {
-                SetPlaying([]);
-                _user.LogOff();
+                Export<ReleasePipeDelegate>(_module, "Steam_BReleaseSteamPipe")(_pipe);
             }
             catch (Exception)
             {
-                // The connection is going away either way.
+                // The pipe is released when the process exits.
             }
+
+            NativeLibrary.Free(_module);
         }
 
-        _shutdown.Cancel();
-        _client.Disconnect();
-        _pump.Wait(TimeSpan.FromSeconds(2));
-        _shutdown.Dispose();
-    }
+        private static T Export<T>(nint module, string name) where T : Delegate
+            => Marshal.GetDelegateForFunctionPointer<T>(NativeLibrary.GetExport(module, name));
 
-    private void Pump()
-    {
-        while (!_shutdown.IsCancellationRequested)
-        {
-            _callbacks.RunWaitCallbacks(TimeSpan.FromMilliseconds(250));
-        }
-    }
-
-    private void OnConnected()
-    {
-        _connected = true;
-        _user.LogOn(new SteamUser.LogOnDetails
-        {
-            Username = _username,
-            Password = _password,
-            AuthCode = _pendingAuthCode,
-            TwoFactorCode = _pendingTwoFactorCode,
-            ShouldRememberPassword = false,
-            ClientOSType = EOSType.Windows10,
-        });
-    }
-
-    private string? _username;
-    private string? _password;
-
-    private void OnLoggedOn(SteamUser.LoggedOnCallback callback)
-    {
-        if (callback.Result == EResult.OK)
-        {
-            IsLoggedOn = true;
-            _logon?.TrySetResult(null);
-            return;
-        }
-
-        IsLoggedOn = false;
-        _logon?.TrySetResult(callback.Result.ToString());
-    }
-
-    private void OnDisconnected()
-    {
-        var wasConnected = _connected;
-        _connected = false;
-        IsLoggedOn = false;
-        if (!wasConnected)
-        {
-            _logon?.TrySetResult("Could not connect to Steam.");
-        }
+        private delegate int CreatePipeDelegate();
+        private delegate int ConnectUserDelegate(int pipe);
+        private delegate byte LoggedOnDelegate(int user, int pipe);
+        private delegate void ReleasePipeDelegate(int pipe);
     }
 }

@@ -13,6 +13,7 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+            ApplyDarkTheme();
             gamesGrid.CellContentClick += GamesGrid_CellContentClick;
             gamesGrid.CurrentCellDirtyStateChanged += GamesGrid_CurrentCellDirtyStateChanged;
             FormClosing += (_, _) => _idle?.Dispose();
@@ -24,6 +25,7 @@ namespace WinFormsApp1
             saveButton.Enabled = false;
             statusLabel.Text = "Reading the Steam library...";
             gamesGrid.Rows.Clear();
+            searchBox.Text = "";
             DisposeIcons();
             UseWaitCursor = true;
 
@@ -102,6 +104,20 @@ namespace WinFormsApp1
             }
         }
 
+        private void SearchBox_TextChanged(object? sender, EventArgs e)
+        {
+            var query = searchBox.Text.Trim();
+            gamesGrid.CurrentCell = null;
+            foreach (DataGridViewRow row in gamesGrid.Rows)
+            {
+                var name = row.Cells[nameColumn.Index].Value as string ?? "";
+                var appId = row.Cells[appIdColumn.Index].Value?.ToString() ?? "";
+                row.Visible = query.Length == 0
+                    || name.Contains(query, StringComparison.OrdinalIgnoreCase)
+                    || appId.Contains(query, StringComparison.Ordinal);
+            }
+        }
+
         private DataGridViewRow? RowFor(uint appId)
         {
             foreach (DataGridViewRow row in gamesGrid.Rows)
@@ -174,44 +190,42 @@ namespace WinFormsApp1
 
         private async Task ApplyIdleAsync(IReadOnlyList<uint> appIds)
         {
-            if (_idle is not { IsLoggedOn: true })
-            {
-                if (!await LogOnAsync())
-                {
-                    throw new InvalidOperationException("Steam login did not complete.");
-                }
-            }
-
-            _idle!.SetPlaying(appIds);
+            _idle ??= new SteamIdle();
+            statusLabel.Text = appIds.Count == 0
+                ? "Telling Steam nothing is running..."
+                : "Telling the open Steam client...";
+            await _idle.SetPlayingAsync(appIds);
             statusLabel.Text = appIds.Count == 0
                 ? "Told Steam nothing is running."
                 : $"Told Steam {appIds.Count} {(appIds.Count == 1 ? "game is" : "games are")} running.";
         }
 
-        private async Task<bool> LogOnAsync()
+        private async void StopAllButton_Click(object? sender, EventArgs e)
         {
-            if (_scan == null)
+            if (_applyingIdle)
             {
-                return false;
+                return;
             }
 
-            using var dialog = new LoginDialog(_scan.Account.AccountName);
-            if (dialog.ShowDialog(this) != DialogResult.OK)
+            _applyingIdle = true;
+            stopAllButton.Enabled = false;
+            try
             {
-                return false;
+                await ApplyIdleAsync([]);
+                foreach (DataGridViewRow row in gamesGrid.Rows)
+                {
+                    row.Cells[idleColumn.Index].Value = false;
+                }
             }
-
-            statusLabel.Text = "Logging in to Steam...";
-            _idle ??= new SteamIdle();
-            using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(30));
-            var failure = await _idle.LogOnAsync(dialog.Username, dialog.Password, dialog.AuthCode, dialog.TwoFactorCode, timeout.Token);
-            if (failure != null)
+            catch (Exception ex)
             {
-                statusLabel.Text = $"Steam login failed: {failure}";
-                return false;
+                statusLabel.Text = ex.Message;
             }
-
-            return true;
+            finally
+            {
+                stopAllButton.Enabled = true;
+                _applyingIdle = false;
+            }
         }
 
         private void SaveButton_Click(object? sender, EventArgs e)
@@ -236,6 +250,54 @@ namespace WinFormsApp1
 
             File.WriteAllText(dialog.FileName, _scan.ToJson());
             statusLabel.Text = $"Saved {_scan.Games.Count} games to {dialog.FileName}";
+        }
+
+        private void ApplyDarkTheme()
+        {
+            var background = Color.FromArgb(32, 34, 37);
+            var panel = Color.FromArgb(40, 43, 48);
+            var field = Color.FromArgb(24, 26, 28);
+            var text = Color.FromArgb(220, 222, 225);
+            var muted = Color.FromArgb(154, 160, 166);
+            var line = Color.FromArgb(58, 62, 68);
+            var accent = Color.FromArgb(70, 118, 176);
+
+            BackColor = background;
+            ForeColor = text;
+            headerPanel.BackColor = panel;
+            accountCaption.ForeColor = muted;
+            accountLabel.ForeColor = text;
+            statusLabel.ForeColor = muted;
+            searchBox.BackColor = field;
+            searchBox.ForeColor = text;
+            searchBox.BorderStyle = BorderStyle.FixedSingle;
+
+            foreach (var button in new[] { stopAllButton, scanButton, saveButton })
+            {
+                button.UseVisualStyleBackColor = false;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = line;
+                button.BackColor = field;
+                button.ForeColor = text;
+            }
+
+            gamesGrid.BackgroundColor = background;
+            gamesGrid.GridColor = line;
+            gamesGrid.EnableHeadersVisualStyles = false;
+            gamesGrid.BorderStyle = BorderStyle.None;
+            gamesGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            gamesGrid.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            gamesGrid.DefaultCellStyle.BackColor = background;
+            gamesGrid.DefaultCellStyle.ForeColor = text;
+            gamesGrid.DefaultCellStyle.SelectionBackColor = accent;
+            gamesGrid.DefaultCellStyle.SelectionForeColor = Color.White;
+            gamesGrid.ColumnHeadersDefaultCellStyle.BackColor = panel;
+            gamesGrid.ColumnHeadersDefaultCellStyle.ForeColor = muted;
+            gamesGrid.ColumnHeadersDefaultCellStyle.SelectionBackColor = panel;
+            gamesGrid.ColumnHeadersDefaultCellStyle.SelectionForeColor = muted;
+            gamesGrid.RowTemplate.DefaultCellStyle.BackColor = background;
+            iconColumn.DefaultCellStyle.BackColor = background;
+            iconColumn.DefaultCellStyle.SelectionBackColor = accent;
         }
 
         private void DisposeIcons()

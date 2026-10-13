@@ -18,12 +18,13 @@ namespace WinFormsApp1
 
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             headerPanel = new Panel();
             accountCaption = new Label();
             accountLabel = new Label();
+            stopAllButton = new Button();
             scanButton = new Button();
             saveButton = new Button();
+            searchBox = new TextBox();
             gamesGrid = new DataGridView();
             iconColumn = new DataGridViewImageColumn();
             appIdColumn = new DataGridViewTextBoxColumn();
@@ -34,38 +35,51 @@ namespace WinFormsApp1
             headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gamesGrid).BeginInit();
             SuspendLayout();
-            //
+            // 
             // headerPanel
-            //
+            // 
             headerPanel.Controls.Add(accountCaption);
             headerPanel.Controls.Add(accountLabel);
+            headerPanel.Controls.Add(stopAllButton);
             headerPanel.Controls.Add(scanButton);
             headerPanel.Controls.Add(saveButton);
+            headerPanel.Controls.Add(searchBox);
             headerPanel.Dock = DockStyle.Top;
             headerPanel.Location = new Point(0, 0);
             headerPanel.Name = "headerPanel";
             headerPanel.Padding = new Padding(12, 10, 12, 10);
-            headerPanel.Size = new Size(884, 64);
+            headerPanel.Size = new Size(884, 96);
             headerPanel.TabIndex = 0;
-            //
+            // 
             // accountCaption
-            //
+            // 
             accountCaption.AutoSize = true;
             accountCaption.Location = new Point(12, 12);
             accountCaption.Name = "accountCaption";
-            accountCaption.Size = new Size(115, 15);
+            accountCaption.Size = new Size(106, 15);
             accountCaption.TabIndex = 0;
             accountCaption.Text = "Logged in account";
-            //
+            // 
             // accountLabel
-            //
+            // 
             accountLabel.AutoSize = true;
             accountLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             accountLabel.Location = new Point(12, 30);
             accountLabel.Name = "accountLabel";
-            accountLabel.Size = new Size(92, 20);
+            accountLabel.Size = new Size(97, 20);
             accountLabel.TabIndex = 1;
             accountLabel.Text = "Not scanned";
+            // 
+            // scanButton
+            // 
+            stopAllButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            stopAllButton.Location = new Point(540, 16);
+            stopAllButton.Name = "stopAllButton";
+            stopAllButton.Size = new Size(100, 32);
+            stopAllButton.TabIndex = 5;
+            stopAllButton.Text = "Stop all";
+            stopAllButton.UseVisualStyleBackColor = true;
+            stopAllButton.Click += StopAllButton_Click;
             //
             // scanButton
             //
@@ -77,9 +91,9 @@ namespace WinFormsApp1
             scanButton.Text = "Scan";
             scanButton.UseVisualStyleBackColor = true;
             scanButton.Click += ScanButton_Click;
-            //
+            // 
             // saveButton
-            //
+            // 
             saveButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             saveButton.Enabled = false;
             saveButton.Location = new Point(756, 16);
@@ -89,9 +103,19 @@ namespace WinFormsApp1
             saveButton.Text = "Save JSON";
             saveButton.UseVisualStyleBackColor = true;
             saveButton.Click += SaveButton_Click;
-            //
+            // 
+            // searchBox
+            // 
+            searchBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            searchBox.Location = new Point(12, 60);
+            searchBox.Name = "searchBox";
+            searchBox.PlaceholderText = "Search games";
+            searchBox.Size = new Size(860, 23);
+            searchBox.TabIndex = 4;
+            searchBox.TextChanged += SearchBox_TextChanged;
+            // 
             // gamesGrid
-            //
+            // 
             gamesGrid.AllowUserToAddRows = false;
             gamesGrid.AllowUserToDeleteRows = false;
             gamesGrid.AllowUserToResizeRows = false;
@@ -101,18 +125,17 @@ namespace WinFormsApp1
             gamesGrid.BorderStyle = BorderStyle.None;
             gamesGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gamesGrid.Columns.AddRange(new DataGridViewColumn[] { iconColumn, appIdColumn, nameColumn, installedColumn, idleColumn });
-            gamesGrid.Location = new Point(12, 76);
+            gamesGrid.Location = new Point(12, 108);
             gamesGrid.MultiSelect = false;
             gamesGrid.Name = "gamesGrid";
-            gamesGrid.ReadOnly = false;
             gamesGrid.RowHeadersVisible = false;
             gamesGrid.RowTemplate.Height = 36;
             gamesGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            gamesGrid.Size = new Size(860, 430);
+            gamesGrid.Size = new Size(860, 398);
             gamesGrid.TabIndex = 1;
-            //
+            // 
             // iconColumn
-            //
+            // 
             iconColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             iconColumn.FillWeight = 1F;
             iconColumn.HeaderText = "";
@@ -121,40 +144,37 @@ namespace WinFormsApp1
             iconColumn.Name = "iconColumn";
             iconColumn.ReadOnly = true;
             iconColumn.Width = 48;
-            //
+            // 
             // appIdColumn
-            //
+            // 
             appIdColumn.FillWeight = 25F;
             appIdColumn.HeaderText = "AppID";
             appIdColumn.Name = "appIdColumn";
             appIdColumn.ReadOnly = true;
-            appIdColumn.SortMode = DataGridViewColumnSortMode.Automatic;
-            //
+            // 
             // nameColumn
-            //
+            // 
             nameColumn.FillWeight = 150F;
             nameColumn.HeaderText = "Game";
             nameColumn.Name = "nameColumn";
             nameColumn.ReadOnly = true;
-            nameColumn.SortMode = DataGridViewColumnSortMode.Automatic;
-            //
+            // 
             // installedColumn
-            //
+            // 
             installedColumn.FillWeight = 25F;
             installedColumn.HeaderText = "Installed";
             installedColumn.Name = "installedColumn";
             installedColumn.ReadOnly = true;
-            installedColumn.SortMode = DataGridViewColumnSortMode.Automatic;
-            //
+            // 
             // idleColumn
-            //
+            // 
             idleColumn.FillWeight = 20F;
             idleColumn.HeaderText = "Idle?";
             idleColumn.Name = "idleColumn";
             idleColumn.ToolTipText = "Tell Steam this game is running. Up to 34 at once.";
-            //
+            // 
             // statusLabel
-            //
+            // 
             statusLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             statusLabel.AutoEllipsis = true;
             statusLabel.Location = new Point(12, 516);
@@ -162,9 +182,10 @@ namespace WinFormsApp1
             statusLabel.Size = new Size(860, 20);
             statusLabel.TabIndex = 2;
             statusLabel.Text = "Scan reads the account currently logged in to Steam.";
-            //
+            // 
             // Form1
-            //
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(884, 546);
             Controls.Add(statusLabel);
@@ -185,8 +206,10 @@ namespace WinFormsApp1
         private Panel headerPanel;
         private Label accountCaption;
         private Label accountLabel;
+        private Button stopAllButton;
         private Button scanButton;
         private Button saveButton;
+        private TextBox searchBox;
         private DataGridView gamesGrid;
         private DataGridViewImageColumn iconColumn;
         private DataGridViewTextBoxColumn appIdColumn;
