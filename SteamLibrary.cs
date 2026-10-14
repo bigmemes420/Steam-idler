@@ -377,6 +377,57 @@ internal sealed class SteamLibraryScan
         return installed;
     }
 
+    internal static IReadOnlyList<string> SteamAppsFolders()
+    {
+        var steamPath = FindSteamPath();
+        var folders = new List<string> { Path.Combine(steamPath, "steamapps") };
+        var vdf = Path.Combine(steamPath, "steamapps", "libraryfolders.vdf");
+        try
+        {
+            if (File.Exists(vdf) && ReadTextVdf(vdf).Children.TryGetValue("libraryfolders", out var libraries))
+            {
+                foreach (var library in libraries.Children.Values)
+                {
+                    if (library.Values.TryGetValue("path", out var libraryPath) && !string.IsNullOrWhiteSpace(libraryPath))
+                    {
+                        folders.Add(Path.Combine(libraryPath, "steamapps"));
+                    }
+                }
+            }
+        }
+        catch (Exception)
+        {
+            // Fall back to the main library only.
+        }
+
+        return folders.Select(Path.GetFullPath).Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+    }
+
+    internal static bool ManifestIsFullyInstalled(string steamApps, uint appId) => IsFullyInstalled(steamApps, appId);
+
+    /// <summary>Reads StateFlags, installdir and SizeOnDisk from an app manifest, or null if unreadable.</summary>
+    internal static (uint Flags, string? InstallDir, ulong SizeOnDisk)? ReadManifest(string manifest)
+    {
+        try
+        {
+            if (!ReadTextVdf(manifest).Children.TryGetValue("AppState", out var state))
+            {
+                return null;
+            }
+
+            state.Values.TryGetValue("StateFlags", out var flagsText);
+            state.Values.TryGetValue("installdir", out var installDir);
+            state.Values.TryGetValue("SizeOnDisk", out var sizeText);
+            uint.TryParse(flagsText, out var flags);
+            ulong.TryParse(sizeText, out var size);
+            return (flags, installDir, size);
+        }
+        catch (Exception)
+        {
+            return null;
+        }
+    }
+
     private static bool IsFullyInstalled(string steamApps, uint appId)
     {
         var manifest = Path.Combine(steamApps, $"appmanifest_{appId}.acf");

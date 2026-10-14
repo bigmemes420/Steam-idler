@@ -17,6 +17,7 @@ namespace WinFormsApp1
             gamesGrid.CellContentClick += GamesGrid_CellContentClick;
             gamesGrid.CurrentCellDirtyStateChanged += GamesGrid_CurrentCellDirtyStateChanged;
             FormClosing += (_, _) => _idle?.Dispose();
+            Shown += (_, _) => ScanButton_Click(scanButton, EventArgs.Empty);
         }
 
         private async void ScanButton_Click(object? sender, EventArgs e)

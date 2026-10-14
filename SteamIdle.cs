@@ -9,6 +9,7 @@ internal sealed class SteamIdle : IDisposable
     public const int MaxGames = 34;
 
     private readonly Dictionary<uint, Process> _processes = new();
+    private readonly SteamInstallGuard _guard = new();
 
     public bool IsConnected => _processes.Values.Any(process => !process.HasExited);
 
@@ -23,6 +24,7 @@ internal sealed class SteamIdle : IDisposable
             {
                 Stop(_processes[appId]);
                 _processes.Remove(appId);
+                _guard.AfterIdle(appId);
             }
 
             foreach (var appId in selected)
@@ -32,6 +34,7 @@ internal sealed class SteamIdle : IDisposable
                     continue;
                 }
 
+                _guard.BeforeIdle(appId);
                 _processes[appId] = Start(appId);
             }
         });
@@ -39,9 +42,10 @@ internal sealed class SteamIdle : IDisposable
 
     public void Dispose()
     {
-        foreach (var process in _processes.Values)
+        foreach (var (appId, process) in _processes)
         {
             Stop(process);
+            _guard.AfterIdle(appId);
         }
 
         _processes.Clear();
@@ -56,6 +60,7 @@ internal sealed class SteamIdle : IDisposable
                 FileName = Environment.ProcessPath ?? throw new InvalidOperationException("The application path is not available."),
                 Arguments = $"--idle {appId}",
                 UseShellExecute = false,
+                RedirectStandardInput = true,
                 EnvironmentVariables = { ["SteamAppId"] = appId.ToString() },
                 CreateNoWindow = true,
             },
@@ -70,8 +75,21 @@ internal sealed class SteamIdle : IDisposable
         {
             if (!process.HasExited)
             {
-                process.Kill(entireProcessTree: true);
-                process.WaitForExit(2000);
+                // Ask the child to release its Steam pipe and exit cleanly, so Steam sees the
+                // game close normally instead of a crashed process.
+                try
+                {
+                    process.StandardInput.Close();
+                }
+                catch (Exception)
+                {
+                }
+
+                if (!process.WaitForExit(3000))
+                {
+                    process.Kill(entireProcessTree: true);
+                    process.WaitForExit(2000);
+                }
             }
         }
         catch (Exception)
@@ -93,6 +111,24 @@ internal sealed class SteamIdle : IDisposable
             eventArgs.Cancel = true;
             stop.Set();
         };
+        // The parent closes our standard input to ask us to stop.
+        var reader = new Thread(() =>
+        {
+            try
+            {
+                using var input = Console.OpenStandardInput();
+                var buffer = new byte[64];
+                while (input.Read(buffer, 0, buffer.Length) > 0)
+                {
+                }
+            }
+            catch (Exception)
+            {
+            }
+
+            stop.Set();
+        }) { IsBackground = true };
+        reader.Start();
         stop.WaitOne();
     }
 

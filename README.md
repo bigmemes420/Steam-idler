@@ -4,7 +4,7 @@ A Windows app that reads the Steam account already logged in on this PC and list
 
 ## What it does
 
-**Scan** reads the local Steam installation:
+The app scans once automatically when its window opens. **Scan** runs it again. It reads the local Steam installation:
 
 - the account marked most recent in `config\loginusers.vdf`
 - owned packages from that account's encrypted license cache
@@ -20,6 +20,8 @@ The grid shows a cached library icon, the AppID, the name, whether it is install
 Each checked game is reported to the already-open Steam client. Steam allows 34 games at once; checking a 35th is refused. Unchecking a game stops it, and closing the window stops all of them. **Stop all** stops every game and clears every checkbox, including rows hidden by the search.
 
 Steam must be running and logged in before a game is checked.
+
+When a game stops idling, the app closes it cleanly so Steam sees a normal exit. If the game was not installed before idling, the app then removes anything Steam recorded that makes it look installed: an `appmanifest_<appid>.acf` that Steam created during idling with no installed flag, no game folder and no size on disk, and the `Installed`/`Running` flags under `HKCU\Software\Valve\Steam\Apps\<appid>`. Games that were installed, or that start downloading while idled, are never touched. Steam may need a restart before the game leaves **Installed locally**.
 
 ## Build
 
