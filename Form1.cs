@@ -16,6 +16,7 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+            Icon = Icon.ExtractAssociatedIcon(Environment.ProcessPath!) ?? Icon;
             ApplyDarkTheme();
             gamesGrid.CellContentClick += GamesGrid_CellContentClick;
             gamesGrid.CurrentCellDirtyStateChanged += GamesGrid_CurrentCellDirtyStateChanged;
