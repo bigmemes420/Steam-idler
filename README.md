@@ -1,35 +1,45 @@
 # Steam library
 
-A Windows app that reads the Steam account already logged in on this PC and lists the games it owns. Checking a game tells the running Steam client that the game is being played. Nothing is downloaded from Steam and no second login is required.
+A Windows app that reads the Steam account already logged in on this PC, lists the games it owns, and can idle them through the Steam client that is already open. There is no sign-in: the app never asks for a username, password or Steam Guard code.
 
-## What it does
+## Scanning
 
-The app scans once automatically when its window opens. **Scan** runs it again. It reads the local Steam installation:
+The app scans once automatically when its window opens. Press **Scan** to scan again. A scan reads only local Steam files:
 
-- the account marked most recent in `config\loginusers.vdf`
-- owned packages from that account's encrypted license cache
-- app names and types from Steam's local `appinfo.vdf`
-- whether a game is present in a Steam library folder
+- the most recent account in `config\loginusers.vdf`
+- the packages that account owns, from its encrypted license cache (`userdata\<id>\config\licensecache`)
+- app names and types from `appcache\appinfo.vdf` (only apps of type "game" are listed)
+- library folders from `config\libraryfolders.vdf`, plus each game's `appmanifest_<appid>.acf`
 
-The grid shows a cached library icon, the AppID, the name, whether it is installed, and an **Idle?** checkbox. The search box filters by name or AppID. Icons and checked boxes stay attached to their rows while the list is filtered.
+A game shows as **Installed** only when its app manifest says it is fully installed and its folder under `steamapps\common` exists. Being listed in a library folder is not enough.
 
-**Save JSON** writes the scanned list. The suggested file is `steam-games-<account>.json` in Documents. Each game has `appid`, `name`, `type`, and `installed`.
+## The list
+
+Each row shows the game's cached library icon, AppID, name, whether it is installed, and an **Idle?** checkbox. The search box filters by name or AppID. Checked boxes stay checked while the list is filtered.
+
+**Save JSON** saves the scanned list. The suggested file is `steam-games-<account>.json` in Documents. Each game has `appid`, `name`, `type` and `installed`.
 
 ## Idling
 
-Each checked game is reported to the already-open Steam client. Steam allows 34 games at once; checking a 35th is refused. Unchecking a game stops it, and closing the window stops all of them. **Stop all** stops every game and clears every checkbox, including rows hidden by the search.
+Steam must be running and logged in. Checking a game tells the open Steam client that the game is running, so it shows as playing. You can idle up to 34 games at once; a 35th is refused.
 
-Steam must be running and logged in before a game is checked.
+Each idled game runs as a small hidden copy of the app. Unchecking a game stops it, **Stop all** stops every game and clears every checkbox (including rows hidden by the search), and closing the window stops them all. Stopping is clean: the idle process releases its Steam connection and exits on its own, and it is only force-closed if it has not exited after 3 seconds.
 
-When a game stops idling, the app closes it cleanly (it releases its Steam user and pipe) instead of killing it.
+## "Installed locally" and Restart Steam
 
-Each idled game connects to Steam the same way [Steam Achievement Manager](https://github.com/gibbed/SteamAchievementManager) does: `SteamAppId` is set, `steamclient64.dll` is loaded from the Steam install folder, and the `SteamClient018` interface is used to create a pipe, connect to the global user, and open the utils, user and user stats interfaces, with callbacks pumped every 100 ms. That code is adapted from SAM, Copyright (c) 2024 Rick (gibbed), under the zlib License.
+While you idle a game, Steam may list it under **Installed locally**, even if it is not installed. Steam does this for any tool that idles through the open client (Steam Achievement Manager does it too). It is kept only in Steam's memory, not in files or the registry, and it goes away when Steam restarts. The app shows a note about this under the list.
 
-### "Installed locally" after idling
+**Restart Steam** clears it. After you confirm, it:
 
-Steam may list idled games under **Installed locally** until Steam restarts. This happens with any tool that idles through the open Steam client (Steam Achievement Manager does it too). Steam keeps it only in memory; no files or registry values change, and it clears when Steam restarts. The app shows a note about this under the game list.
+1. stops all idling and waits for the idle processes to exit
+2. asks Steam to exit with `steam.exe -shutdown` and waits up to 30 seconds (if Steam is still running, it tells you and stops; it never force-closes Steam)
+3. starts Steam again and waits up to 60 seconds for it to log in
+4. scans again
 
-**Restart Steam** clears it for you. After you confirm, it stops all idling, asks Steam to exit with `steam.exe -shutdown`, waits up to 30 seconds for Steam to close, starts Steam again, waits up to 60 seconds for it to log in, and scans again. If Steam does not close in time, nothing is forced; the app tells you and stops.
+## Requirements
+
+- Windows x64
+- Steam installed and logged in
 
 ## Build
 
@@ -39,4 +49,8 @@ The project targets .NET 9 for Windows x64.
 dotnet publish WinFormsApp1.csproj -c Release -o publish
 ```
 
-That writes one self-contained file, `publish\WinFormsApp1.exe`. It includes the app and the .NET runtime, so the machine it runs on does not need .NET installed.
+This creates a single self-contained file, `publish\WinFormsApp1.exe`, that includes the .NET runtime, so the PC it runs on does not need .NET installed.
+
+## Credits
+
+The code that connects idled games to Steam (`SteamIdle.cs`) is adapted from [Steam Achievement Manager](https://github.com/gibbed/SteamAchievementManager), Copyright (c) 2024 Rick (gibbed), under the zlib License.
