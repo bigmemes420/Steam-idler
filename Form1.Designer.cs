@@ -22,6 +22,8 @@ namespace WinFormsApp1
             accountCaption = new Label();
             accountLabel = new Label();
             stopAllButton = new Button();
+            restartSteamButton = new Button();
+            idleNoteLabel = new Label();
             scanButton = new Button();
             saveButton = new Button();
             searchBox = new TextBox();
@@ -40,6 +42,7 @@ namespace WinFormsApp1
             // 
             headerPanel.Controls.Add(accountCaption);
             headerPanel.Controls.Add(accountLabel);
+            headerPanel.Controls.Add(restartSteamButton);
             headerPanel.Controls.Add(stopAllButton);
             headerPanel.Controls.Add(scanButton);
             headerPanel.Controls.Add(saveButton);
@@ -80,6 +83,17 @@ namespace WinFormsApp1
             stopAllButton.Text = "Stop all";
             stopAllButton.UseVisualStyleBackColor = true;
             stopAllButton.Click += StopAllButton_Click;
+            //
+            // restartSteamButton
+            //
+            restartSteamButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            restartSteamButton.Location = new Point(424, 16);
+            restartSteamButton.Name = "restartSteamButton";
+            restartSteamButton.Size = new Size(108, 32);
+            restartSteamButton.TabIndex = 6;
+            restartSteamButton.Text = "Restart Steam";
+            restartSteamButton.UseVisualStyleBackColor = true;
+            restartSteamButton.Click += RestartSteamButton_Click;
             //
             // scanButton
             //
@@ -131,7 +145,7 @@ namespace WinFormsApp1
             gamesGrid.RowHeadersVisible = false;
             gamesGrid.RowTemplate.Height = 36;
             gamesGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            gamesGrid.Size = new Size(860, 398);
+            gamesGrid.Size = new Size(860, 380);
             gamesGrid.TabIndex = 1;
             // 
             // iconColumn
@@ -182,6 +196,17 @@ namespace WinFormsApp1
             statusLabel.Size = new Size(860, 20);
             statusLabel.TabIndex = 2;
             statusLabel.Text = "Scan reads the account currently logged in to Steam.";
+            //
+            // idleNoteLabel
+            //
+            idleNoteLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            idleNoteLabel.AutoEllipsis = true;
+            idleNoteLabel.Font = new Font("Segoe UI", 8F);
+            idleNoteLabel.Location = new Point(12, 494);
+            idleNoteLabel.Name = "idleNoteLabel";
+            idleNoteLabel.Size = new Size(860, 18);
+            idleNoteLabel.TabIndex = 3;
+            idleNoteLabel.Text = "Note: Steam may list idled games under \"Installed locally\" until Steam restarts. Use Restart Steam to clear it.";
             // 
             // Form1
             // 
@@ -189,6 +214,7 @@ namespace WinFormsApp1
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(884, 546);
             Controls.Add(statusLabel);
+            Controls.Add(idleNoteLabel);
             Controls.Add(gamesGrid);
             Controls.Add(headerPanel);
             MinimumSize = new Size(640, 360);
@@ -207,6 +233,8 @@ namespace WinFormsApp1
         private Label accountCaption;
         private Label accountLabel;
         private Button stopAllButton;
+        private Button restartSteamButton;
+        private Label idleNoteLabel;
         private Button scanButton;
         private Button saveButton;
         private TextBox searchBox;

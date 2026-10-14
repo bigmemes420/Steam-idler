@@ -25,6 +25,12 @@ When a game stops idling, the app closes it cleanly (it releases its Steam user 
 
 Each idled game connects to Steam the same way [Steam Achievement Manager](https://github.com/gibbed/SteamAchievementManager) does: `SteamAppId` is set, `steamclient64.dll` is loaded from the Steam install folder, and the `SteamClient018` interface is used to create a pipe, connect to the global user, and open the utils, user and user stats interfaces, with callbacks pumped every 100 ms. That code is adapted from SAM, Copyright (c) 2024 Rick (gibbed), under the zlib License.
 
+### "Installed locally" after idling
+
+Steam may list idled games under **Installed locally** until Steam restarts. This happens with any tool that idles through the open Steam client (Steam Achievement Manager does it too). Steam keeps it only in memory; no files or registry values change, and it clears when Steam restarts. The app shows a note about this under the game list.
+
+**Restart Steam** clears it for you. After you confirm, it stops all idling, asks Steam to exit with `steam.exe -shutdown`, waits up to 30 seconds for Steam to close, starts Steam again, waits up to 60 seconds for it to log in, and scans again. If Steam does not close in time, nothing is forced; the app tells you and stops.
+
 ## Build
 
 The project targets .NET 9 for Windows x64.
