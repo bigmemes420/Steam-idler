@@ -9,7 +9,6 @@ internal sealed class SteamIdle : IDisposable
     public const int MaxGames = 34;
 
     private readonly Dictionary<uint, Process> _processes = new();
-    private readonly SteamInstallGuard _guard = new();
 
     public bool IsConnected => _processes.Values.Any(process => !process.HasExited);
 
@@ -24,7 +23,6 @@ internal sealed class SteamIdle : IDisposable
             {
                 Stop(_processes[appId]);
                 _processes.Remove(appId);
-                _guard.AfterIdle(appId);
             }
 
             foreach (var appId in selected)
@@ -34,7 +32,6 @@ internal sealed class SteamIdle : IDisposable
                     continue;
                 }
 
-                _guard.BeforeIdle(appId);
                 _processes[appId] = Start(appId);
             }
         });
@@ -42,10 +39,9 @@ internal sealed class SteamIdle : IDisposable
 
     public void Dispose()
     {
-        foreach (var (appId, process) in _processes)
+        foreach (var process in _processes.Values)
         {
             Stop(process);
-            _guard.AfterIdle(appId);
         }
 
         _processes.Clear();
@@ -129,11 +125,28 @@ internal sealed class SteamIdle : IDisposable
             stop.Set();
         }) { IsBackground = true };
         reader.Start();
-        stop.WaitOne();
+        // SAM pumps Steam callbacks on a 100 ms timer while it runs; do the same.
+        while (!stop.WaitOne(100))
+        {
+            pipe.RunCallbacks();
+        }
     }
 
+    // The Steam connection below is ported from Steam Achievement Manager (SAM.API Client.cs,
+    // Steam.cs, Wrappers/SteamClient018.cs), https://github.com/gibbed/SteamAchievementManager,
+    // Copyright (c) 2024 Rick (rick 'at' gibbed 'dot' us), zlib License. Altered: 64-bit
+    // steamclient64.dll, reduced to the calls needed to idle, and written as one class.
     private static string ClientLibraryPath()
     {
+        // SAM: HKLM\Software\Valve\Steam InstallPath, then <path>\steamclient(64).dll.
+        foreach (var keyPath in new[] { @"HKEY_LOCAL_MACHINE\Software\Valve\Steam", @"HKEY_LOCAL_MACHINE\Software\WOW6432Node\Valve\Steam" })
+        {
+            if (Registry.GetValue(keyPath, "InstallPath", null) is string install && File.Exists(Path.Combine(install, "steamclient64.dll")))
+            {
+                return Path.Combine(install, "steamclient64.dll");
+            }
+        }
+
         var path = Registry.GetValue(@"HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess", "SteamClientDll64", null) as string;
         if (string.IsNullOrWhiteSpace(path) || !File.Exists(path))
         {
@@ -145,44 +158,130 @@ internal sealed class SteamIdle : IDisposable
 
     private sealed class GamePipe : IDisposable
     {
-        private readonly nint _module;
-        private readonly int _pipe;
+        // ISteamClient018 vtable slots (SAM.API Interfaces/ISteamClient018.cs).
+        private const int SlotCreateSteamPipe = 0;
+        private const int SlotReleaseSteamPipe = 1;
+        private const int SlotConnectToGlobalUser = 2;
+        private const int SlotReleaseUser = 4;
+        private const int SlotGetISteamUser = 5;
+        private const int SlotGetISteamUtils = 9;
+        private const int SlotGetISteamUserStats = 13;
 
-        private GamePipe(nint module, int pipe)
+        private readonly nint _module;
+        private readonly nint _client;
+        private readonly BGetCallbackDelegate _getCallback;
+        private readonly FreeLastCallbackDelegate _freeLastCallback;
+        private int _pipe;
+        private int _user;
+
+        private GamePipe(nint module, nint client, BGetCallbackDelegate getCallback, FreeLastCallbackDelegate freeLastCallback)
         {
             _module = module;
-            _pipe = pipe;
+            _client = client;
+            _getCallback = getCallback;
+            _freeLastCallback = freeLastCallback;
         }
+
+        [DllImport("kernel32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
+        private static extern bool SetDllDirectory(string path);
 
         public static GamePipe Open(string clientPath, uint appId)
         {
+            // Same order as SAM Client.Initialize: SteamAppId, load, CreateInterface, pipe, global user,
+            // utils (app id check), then user / user stats / apps interfaces.
+            Environment.SetEnvironmentVariable("SteamAppId", appId.ToString());
+            var steamDir = Path.GetDirectoryName(clientPath)!;
+            SetDllDirectory(steamDir + ";" + Path.Combine(steamDir, "bin"));
             var module = NativeLibrary.Load(clientPath);
+            GamePipe? result = null;
             try
             {
-                var createPipe = Export<CreatePipeDelegate>(module, "Steam_CreateSteamPipe");
-                var connectUser = Export<ConnectUserDelegate>(module, "Steam_ConnectToGlobalUser");
-                var loggedOn = Export<LoggedOnDelegate>(module, "Steam_BLoggedOn");
-                var pipe = createPipe();
-                var user = connectUser(pipe);
-                if (pipe == 0 || user == 0 || loggedOn(user, pipe) == 0)
+                var createInterface = Export<CreateInterfaceDelegate>(module, "CreateInterface");
+                var client = createInterface("SteamClient018", 0);
+                if (client == 0)
+                {
+                    throw new InvalidOperationException("Steam did not provide ISteamClient018.");
+                }
+
+                result = new GamePipe(module, client,
+                    Export<BGetCallbackDelegate>(module, "Steam_BGetCallback"),
+                    Export<FreeLastCallbackDelegate>(module, "Steam_FreeLastCallback"));
+
+                result._pipe = result.Slot<CreateSteamPipeDelegate>(SlotCreateSteamPipe)(client);
+                if (result._pipe == 0)
+                {
+                    throw new InvalidOperationException("Steam is not running.");
+                }
+
+                result._user = result.Slot<ConnectToGlobalUserDelegate>(SlotConnectToGlobalUser)(client, result._pipe);
+                if (result._user == 0)
                 {
                     throw new InvalidOperationException("Steam is not running, or no account is logged in to the open Steam client.");
                 }
 
-                return new GamePipe(module, pipe);
+                var utils = result.Slot<GetPipeInterfaceDelegate>(SlotGetISteamUtils)(client, result._pipe, "SteamUtils005");
+                if (utils != 0)
+                {
+                    // ISteamUtils005::GetAppID is slot 9.
+                    var getAppId = Marshal.GetDelegateForFunctionPointer<GetAppIdDelegate>(VtableEntry(utils, 9));
+                    if (getAppId(utils) != appId)
+                    {
+                        throw new InvalidOperationException($"Steam reported a different app id than {appId}.");
+                    }
+                }
+
+                result.Slot<GetUserInterfaceDelegate>(SlotGetISteamUser)(client, result._user, result._pipe, "SteamUser012");
+                result.Slot<GetUserInterfaceDelegate>(SlotGetISteamUserStats)(client, result._user, result._pipe, "STEAMUSERSTATS_INTERFACE_VERSION013");
+                // SAM also requests ISteamApps001/008, but its delegate omits the `this` argument, so
+                // on Steam that call never reaches ISteamClient::GetISteamApps correctly. It is
+                // skipped here rather than introducing a call SAM effectively never makes.
+                return result;
             }
             catch
             {
-                NativeLibrary.Free(module);
+                if (result != null)
+                {
+                    result.Dispose();
+                }
+                else
+                {
+                    NativeLibrary.Free(module);
+                }
+
                 throw;
+            }
+        }
+
+        /// <summary>Drains pending callbacks, as SAM does on its callback timer.</summary>
+        public void RunCallbacks()
+        {
+            if (_pipe == 0)
+            {
+                return;
+            }
+
+            while (_getCallback(_pipe, out _, out _) != 0)
+            {
+                _freeLastCallback(_pipe);
             }
         }
 
         public void Dispose()
         {
+            // SAM Client.Dispose: ReleaseUser, then ReleaseSteamPipe.
             try
             {
-                Export<ReleasePipeDelegate>(_module, "Steam_BReleaseSteamPipe")(_pipe);
+                if (_pipe > 0)
+                {
+                    if (_user > 0)
+                    {
+                        Slot<ReleaseUserDelegate>(SlotReleaseUser)(_client, _pipe, _user);
+                        _user = 0;
+                    }
+
+                    Slot<ReleaseSteamPipeDelegate>(SlotReleaseSteamPipe)(_client, _pipe);
+                    _pipe = 0;
+                }
             }
             catch (Exception)
             {
@@ -192,12 +291,41 @@ internal sealed class SteamIdle : IDisposable
             NativeLibrary.Free(_module);
         }
 
+        private static nint VtableEntry(nint obj, int slot) => Marshal.ReadIntPtr(Marshal.ReadIntPtr(obj), slot * IntPtr.Size);
+
+        private T Slot<T>(int slot) where T : Delegate => Marshal.GetDelegateForFunctionPointer<T>(VtableEntry(_client, slot));
+
         private static T Export<T>(nint module, string name) where T : Delegate
             => Marshal.GetDelegateForFunctionPointer<T>(NativeLibrary.GetExport(module, name));
 
-        private delegate int CreatePipeDelegate();
-        private delegate int ConnectUserDelegate(int pipe);
-        private delegate byte LoggedOnDelegate(int user, int pipe);
-        private delegate void ReleasePipeDelegate(int pipe);
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        private struct CallbackMessage
+        {
+            public int User;
+            public int Id;
+            public nint ParamPointer;
+            public int ParamSize;
+        }
+
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        private delegate nint CreateInterfaceDelegate(string version, nint returnCode);
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        private delegate byte BGetCallbackDelegate(int pipe, out CallbackMessage message, out int call);
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        private delegate byte FreeLastCallbackDelegate(int pipe);
+        [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
+        private delegate int CreateSteamPipeDelegate(nint self);
+        [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
+        private delegate byte ReleaseSteamPipeDelegate(nint self, int pipe);
+        [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
+        private delegate int ConnectToGlobalUserDelegate(nint self, int pipe);
+        [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
+        private delegate void ReleaseUserDelegate(nint self, int pipe, int user);
+        [UnmanagedFunctionPointer(CallingConvention.ThisCall, CharSet = CharSet.Ansi)]
+        private delegate nint GetPipeInterfaceDelegate(nint self, int pipe, string version);
+        [UnmanagedFunctionPointer(CallingConvention.ThisCall, CharSet = CharSet.Ansi)]
+        private delegate nint GetUserInterfaceDelegate(nint self, int user, int pipe, string version);
+        [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
+        private delegate uint GetAppIdDelegate(nint self);
     }
 }

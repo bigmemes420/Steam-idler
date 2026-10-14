@@ -21,7 +21,9 @@ Each checked game is reported to the already-open Steam client. Steam allows 34 
 
 Steam must be running and logged in before a game is checked.
 
-When a game stops idling, the app closes it cleanly so Steam sees a normal exit. If the game was not installed before idling, the app then removes anything Steam recorded that makes it look installed: an `appmanifest_<appid>.acf` that Steam created during idling with no installed flag, no game folder and no size on disk, and the `Installed`/`Running` flags under `HKCU\Software\Valve\Steam\Apps\<appid>`. Games that were installed, or that start downloading while idled, are never touched. Steam may need a restart before the game leaves **Installed locally**.
+When a game stops idling, the app closes it cleanly (it releases its Steam user and pipe) instead of killing it.
+
+Each idled game connects to Steam the same way [Steam Achievement Manager](https://github.com/gibbed/SteamAchievementManager) does: `SteamAppId` is set, `steamclient64.dll` is loaded from the Steam install folder, and the `SteamClient018` interface is used to create a pipe, connect to the global user, and open the utils, user and user stats interfaces, with callbacks pumped every 100 ms. That code is adapted from SAM, Copyright (c) 2024 Rick (gibbed), under the zlib License.
 
 ## Build
 
