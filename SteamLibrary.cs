@@ -356,9 +356,18 @@ internal sealed class SteamLibraryScan
                 continue;
             }
 
+            // libraryfolders.vdf can list apps that Steam has only seen run
+            // (for example an idled game), so require a fully installed
+            // app manifest in that library before calling a game installed.
+            if (!folder.Values.TryGetValue("path", out var libraryPath) || string.IsNullOrWhiteSpace(libraryPath))
+            {
+                continue;
+            }
+
+            var steamApps = Path.Combine(libraryPath, "steamapps");
             foreach (var appIdText in apps.Values.Keys)
             {
-                if (uint.TryParse(appIdText, out var appId))
+                if (uint.TryParse(appIdText, out var appId) && IsFullyInstalled(steamApps, appId))
                 {
                     installed.Add(appId);
                 }
@@ -366,6 +375,41 @@ internal sealed class SteamLibraryScan
         }
 
         return installed;
+    }
+
+    private static bool IsFullyInstalled(string steamApps, uint appId)
+    {
+        var manifest = Path.Combine(steamApps, $"appmanifest_{appId}.acf");
+        if (!File.Exists(manifest))
+        {
+            return false;
+        }
+
+        try
+        {
+            var root = ReadTextVdf(manifest);
+            if (!root.Children.TryGetValue("AppState", out var state))
+            {
+                return false;
+            }
+
+            // StateFlags bit 4 is "fully installed".
+            if (!state.Values.TryGetValue("StateFlags", out var flagsText) || !uint.TryParse(flagsText, out var flags) || (flags & 4) == 0)
+            {
+                return false;
+            }
+
+            if (state.Values.TryGetValue("installdir", out var installDir) && !string.IsNullOrWhiteSpace(installDir))
+            {
+                return Directory.Exists(Path.Combine(steamApps, "common", installDir));
+            }
+
+            return true;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
     }
 
     private static VdfNode ReadTextVdf(string path)
